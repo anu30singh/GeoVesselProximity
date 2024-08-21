@@ -11,6 +11,14 @@ This script analyzes vessel proximity events using data from a CSV file. It calc
 - `matplotlib`: For plotting with Matplotlib.
 - `plotly`: For interactive plotting.
 
+## Input Data
+
+The input is a CSV file with the following columns:
+- `mmsi`: Maritime Mobile Service Identity (9-digit vessel ID)
+- `timestamp`: Timestamp of the vessel position
+- `lat`: Latitude of the vessel
+- `lon`: Longitude of the vessel
+
 ## Setup
 
 1. **Install Dependencies**
