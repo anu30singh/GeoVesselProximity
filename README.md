@@ -25,8 +25,13 @@ The input is a CSV file with the following columns:
 
    Ensure you have the necessary Python packages installed. You can install them using pip:
 
-   ```bash
+  ```bash
    pip install pandas geopy matplotlib plotly
+
+## Background:
+Marine vessels, including container ships, cargo ships, passenger ships, and others, are assigned a unique
+9-digit number called the Maritime Mobile Service Identity (MMSI). This number is used to uniquely
+identify each vessel.
 
 ## Haversine Distance Formula:
 
