@@ -3,8 +3,12 @@ from geopy.distance import geodesic
 import matplotlib.pyplot as plt
 import plotly.express as px
 
-def haversine_distance(coord1, coord2):
-    return geodesic(coord1, coord2).kilometers
+
+#determining distance between marines 
+def haversine_distance(pos1, pos2):
+    return geodesic(pos1, pos2).kilometers
+
+
 
 def detect_proximity(data, distance_threshold):
     proximity_events = []
@@ -39,14 +43,13 @@ data['lon'] = data['lon'].astype(float)
 print(data.head())
 print(data.dtypes)
 
-# Detect proximity events
-distance_threshold = 0.5  # Example distance threshold in kilometers
+distance_threshold = 0.5  #for eg
 proximity_events_df = detect_proximity(data, distance_threshold)
 
-# Print proximity events to check results
+
 print(proximity_events_df)
 
-# Visualization
+
 def plot_proximity_events(events_df):
     plt.figure(figsize=(10, 6))
     for _, event in events_df.iterrows():
@@ -57,13 +60,13 @@ def plot_proximity_events(events_df):
     plt.legend()
     plt.show()
 
+#function for plotting maps 
 def plot_proximity_events_plotly(events_df):
     fig = px.scatter(events_df, x='timestamp', y='mmsi', color='vessel_proximity',
                      title='Vessel Proximity Events',
                      labels={'timestamp': 'Timestamp', 'mmsi': 'MMSI'})
     fig.show()
 
-# Call the functions to plot
+
 plot_proximity_events(proximity_events_df)
-# Or
-# plot_proximity_events_plotly(proximity_events_df)
+
