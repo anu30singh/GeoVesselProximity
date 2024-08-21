@@ -19,3 +19,7 @@ This script analyzes vessel proximity events using data from a CSV file. It calc
 
    ```bash
    pip install pandas geopy matplotlib plotly
+
+## Haversine Distance Formula:
+
+The Haversine formula calculates the distance between two points on the surface of a sphere using their latitudinal and longitudinal coordinates. It accounts for the spherical shape of the Earth to provide an accurate distance measurement.
