@@ -1,2 +1,21 @@
-# GeoVesselProximity
-An algorithm to determine all vessel proximity events (two vessels having different MMSIs come within a threshold distance) during a given time frame.
+# Vessel Proximity Detection
+
+## Overview
+
+This script analyzes vessel proximity events using data from a CSV file. It calculates when vessels come within a specified distance threshold and visualizes the results using Matplotlib and Plotly.
+
+## Dependencies
+
+- `pandas`: For data manipulation.
+- `geopy`: For calculating geographical distances.
+- `matplotlib`: For plotting with Matplotlib.
+- `plotly`: For interactive plotting.
+
+## Setup
+
+1. **Install Dependencies**
+
+   Ensure you have the necessary Python packages installed. You can install them using pip:
+
+   ```bash
+   pip install pandas geopy matplotlib plotly
