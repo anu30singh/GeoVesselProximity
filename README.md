@@ -19,6 +19,14 @@ The input is a CSV file with the following columns:
 - `lat`: Latitude of the vessel
 - `lon`: Longitude of the vessel
 
+## Background:
+Marine vessels, including container ships, cargo ships, passenger ships, and others, are assigned a unique 9-digit number called the Maritime Mobile Service Identity (MMSI). This number is used to uniquely
+identify each vessel.
+
+## Haversine Distance Formula:
+
+The Haversine formula calculates the distance between two points on the surface of a sphere using their latitudinal and longitudinal coordinates. It accounts for the spherical shape of the Earth to provide an accurate distance measurement.
+
 ## Setup
 
 1. **Install Dependencies**
@@ -28,10 +36,3 @@ The input is a CSV file with the following columns:
   ```bash
    pip install pandas geopy matplotlib plotly
 
-## Background:
-Marine vessels, including container ships, cargo ships, passenger ships, and others, are assigned a unique 9-digit number called the Maritime Mobile Service Identity (MMSI). This number is used to uniquely
-identify each vessel.
-
-## Haversine Distance Formula:
-
-The Haversine formula calculates the distance between two points on the surface of a sphere using their latitudinal and longitudinal coordinates. It accounts for the spherical shape of the Earth to provide an accurate distance measurement.
