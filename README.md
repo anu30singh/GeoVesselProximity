@@ -27,12 +27,3 @@ identify each vessel.
 
 The Haversine formula calculates the distance between two points on the surface of a sphere using their latitudinal and longitudinal coordinates. It accounts for the spherical shape of the Earth to provide an accurate distance measurement.
 
-## Setup
-
-1. **Install Dependencies**
-
-   Ensure you have the necessary Python packages installed. You can install them using pip:
-
-  ```bash
-   pip install pandas geopy matplotlib plotly
-
